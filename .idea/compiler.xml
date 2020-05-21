@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AliTianChi" />
+        <module name="filter-8000" />
+        <module name="filter-8001" />
+        <module name="gather-8002" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AliTianChi" target="1.8" />
+      <module name="filter-8000" target="1.8" />
+      <module name="filter-8001" target="1.8" />
+      <module name="gather-8002" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AliTianChi" options="-parameters" />
+      <module name="filter-8000" options="-parameters" />
+      <module name="filter-8001" options="-parameters" />
+      <module name="gather-8002" options="-parameters" />
+    </option>
+  </component>
+</project>
