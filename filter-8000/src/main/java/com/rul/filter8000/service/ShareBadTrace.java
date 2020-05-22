@@ -16,14 +16,14 @@ public class ShareBadTrace {
         String localPort = System.getProperty("SERVER_PORT", "8000");
         String postPath;
         if ("8000".equals(localPort)) {
-            postPath = "http://localhost:8001/setBadTrace";
+            postPath = "http://localhost:8001/sendBadTrace";
         } else {
-            postPath = "http://localhost:8000/setBadTrace";
+            postPath = "http://localhost:8000/sendBadTrace";
         }
         try {
             URI postURI = new URI(postPath);
             String result = restTemplate.postForObject(postURI, badTrace, String.class);
-            LOGGER.info(result);
+            LOGGER.info("share bad trace " + result);
         } catch (URISyntaxException e) {
             LOGGER.error("URI Syntax");
         }

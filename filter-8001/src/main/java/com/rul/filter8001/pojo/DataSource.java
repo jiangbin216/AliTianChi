@@ -21,9 +21,9 @@ public class DataSource {
     public static String getDataPath() {
         String localPort = System.getProperty("SERVER_PORT","8001");
         if ("8000".equals(localPort)) {
-            return "http://47.106.252.131:" + dataPort + "/trace1.data";
+            return "http://47.106.252.131:" + dataPort + "/trace3.data";
         } else if ("8001".equals(localPort)) {
-            return "http://47.106.252.131:" + dataPort + "/trace2.data";
+            return "http://47.106.252.131:" + dataPort + "/trace4.data";
         } else {
             return null;
         }

@@ -5,17 +5,13 @@ import com.rul.filter8001.pojo.Span;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
+import org.springframework.web.client.RestTemplate;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.Proxy;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.net.*;
+import java.util.*;
 
 /**
  * 处理数据
@@ -29,7 +25,7 @@ public class DealData {
     //存放badTrace
     private static HashSet<String> badTrace = new HashSet<>();
 
-    public static void pullData() {
+    public static synchronized void pullData() {
         try {
             //获取数据源地址
             String dataPath = DataSource.getDataPath();
@@ -60,7 +56,6 @@ public class DealData {
                     if (item[8] != null && (item[8].contains("error=1") || item[8].contains("http.status_code=") &&
                             !item[8].contains("http.status_code=200"))) {
                         badTrace.add(traceId);
-                        System.out.println(traceId);
                     }
                 }
             }
@@ -79,10 +74,20 @@ public class DealData {
      * @param anotherBadTrace 另一个节点的badTrace
      */
     public static synchronized void filterData(HashSet<String> anotherBadTrace) {
-        for (String traceId : traceMap.keySet()) {
-            if (!badTrace.contains(traceId) && !anotherBadTrace.contains(traceId)) {
-                badTrace.remove(traceId);
-            }
+        LOGGER.info("filter data start");
+        traceMap.entrySet().removeIf(entry -> !badTrace.contains(entry.getKey()) &&
+                !anotherBadTrace.contains(entry.getKey()));
+        LOGGER.info("filter data end");
+        System.out.println(traceMap);
+
+        //将过滤后的数据post给汇总节点
+        RestTemplate restTemplate = new RestTemplate();
+        try {
+            URI uri = new URI("http://localhost:8002/setWrongTrace");
+            String result = restTemplate.postForObject(uri, traceMap, String.class);
+            LOGGER.info("setWrongTrace " + result);
+        } catch (URISyntaxException e) {
+            LOGGER.info("URISyntax");
         }
     }
 
