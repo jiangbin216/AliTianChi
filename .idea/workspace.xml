@@ -2,39 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="357f814c-dbb5-435c-a6aa-74d6680ad5b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8000/target/classes/META-INF/filter-8000.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/service/DealData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/target/classes/META-INF/filter-8001.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/service/DealData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Span.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/MergeData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/ReceiveData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/pojo/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/pojo/DataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/DealData.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/DealData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/ReceiveBadTrace.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/ReceiveBadTrace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/ShareBadTrace.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/ShareBadTrace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/CommonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/CommonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/pojo/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/pojo/DataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/service/PullData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/service/ReceiveBadTrace.class" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/service/ReceiveBadTrace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/service/ShareBadTrace.class" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/target/classes/com/rul/filter8000/service/ShareBadTrace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/pojo/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/pojo/DataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/DealData.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/DealData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/ReceiveBadTrace.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/ReceiveBadTrace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/ShareBadTrace.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/ShareBadTrace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/CommonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/CommonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/pojo/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/pojo/DataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/service/PullData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/service/ReceiveBadTrace.class" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/service/ReceiveBadTrace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/service/ShareBadTrace.class" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/target/classes/com/rul/filter8001/service/ShareBadTrace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/gather-8002.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/gather-8002.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/Gather8002Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/Gather8002Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Span.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Span.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/MergeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/MergeData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,18 +153,35 @@
       <workItem from="1590062124088" duration="8010000" />
       <workItem from="1590118215239" duration="165000" />
       <workItem from="1590129253449" duration="4966000" />
-      <workItem from="1590149026298" duration="6050000" />
+      <workItem from="1590149026298" duration="6391000" />
+      <workItem from="1590211355706" duration="3371000" />
     </task>
+    <task id="LOCAL-00001" summary="完成排序">
+      <created>1590155146482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590155146482</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完成排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成排序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Intentions" timestamp="1590133733196">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Intentions/0.0.1280.680@0.0.1280.680" timestamp="1590133733196" />
+    <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590217462782">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1590217462782" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589975992012">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -210,6 +202,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="425" y="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1589975705367" />
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1590155145243">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590155145243" />
     <state width="907" height="388" key="GridCell.Tab.0.bottom" timestamp="1590142831368">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -242,6 +238,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="907" height="388" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1590142831368" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590155157615">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590155157615" />
     <state x="28" y="42" key="new project wizard" timestamp="1590065766147">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -61,6 +61,10 @@ public class DealData {
                 }
             }
 
+            //关闭数据流
+            reader.close();
+            input.close();
+
             LOGGER.info("pull data finished");
             //将badTrace集合分享到另一个过滤节点
             ShareBadTrace.shareBadTrace(badTrace);

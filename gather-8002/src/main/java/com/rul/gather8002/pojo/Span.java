@@ -35,17 +35,15 @@ public class Span {
 
     @Override
     public String toString() {
-        return "Span{" +
-                "traceId='" + traceId + '\'' +
-                ", startTime=" + startTime +
-                ", spanId='" + spanId + '\'' +
-                ", parentSpanId='" + parentSpanId + '\'' +
-                ", duration=" + duration +
-                ", serviceName='" + serviceName + '\'' +
-                ", spanName='" + spanName + '\'' +
-                ", host='" + host + '\'' +
-                ", tags=" + tags +
-                '}';
+        return "traceId=" + traceId + '|' +
+                "startTime=" + startTime + '|' +
+                "spanId='" + spanId + '|' +
+                "parentSpanId='" + parentSpanId + '|' +
+                "duration=" + duration + '|' +
+                "serviceName='" + serviceName + '|' +
+                "spanName='" + spanName + '|' +
+                "host='" + host + '|' +
+                "tags=" + tags;
     }
 
     public String getTraceId() {

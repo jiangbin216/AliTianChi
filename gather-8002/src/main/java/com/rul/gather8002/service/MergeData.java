@@ -67,7 +67,7 @@ public class MergeData {
         int size1 = list1.size();
         int size2 = list2.size();
         ArrayList<Span> result = new ArrayList<>(size1 + size2);
-        int index1 = 0, index2 = 2;
+        int index1 = 0, index2 = 0;
 
         //归并
         while (index1 < size1 && index2 < size2) {

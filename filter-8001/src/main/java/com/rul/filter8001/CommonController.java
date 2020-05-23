@@ -25,13 +25,13 @@ public class CommonController {
 
     /**
      * 接收数据源端口的接口
-     * @param dataport 数据源端口
+     * @param port 数据源端口
      * @return success
      */
-    @RequestMapping("/setParamter")
-    public String setParamter(@RequestParam Integer dataport){
+    @RequestMapping("/setParameter")
+    public String setParamter(@RequestParam Integer port){
         //设置数据源
-        DataSource.setDataPort(dataport);
+        DataSource.setDataPort(port);
         Thread thread = new Thread(DealData::pullData);
         thread.start();
         return "success";
