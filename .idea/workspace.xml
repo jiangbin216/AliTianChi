@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="357f814c-dbb5-435c-a6aa-74d6680ad5b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/clientprocess/PullData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/DataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/DealData.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/DealData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/DealData.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/DealData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Span.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Span.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/MergeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/MergeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/CommonController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +152,9 @@
       <workItem from="1590118215239" duration="165000" />
       <workItem from="1590129253449" duration="4966000" />
       <workItem from="1590149026298" duration="6391000" />
-      <workItem from="1590211355706" duration="3371000" />
+      <workItem from="1590211355706" duration="3612000" />
+      <workItem from="1590238647497" duration="779000" />
+      <workItem from="1590493064635" duration="7503000" />
     </task>
     <task id="LOCAL-00001" summary="完成排序">
       <created>1590155146482</created>

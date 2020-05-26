@@ -19,7 +19,6 @@ public class CommonController {
      */
     @RequestMapping("/ready")
     public String ready(){
-
         return "success";
     }
 
