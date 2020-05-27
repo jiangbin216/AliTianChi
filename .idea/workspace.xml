@@ -2,12 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="357f814c-dbb5-435c-a6aa-74d6680ad5b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/clientprocess/PullData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/DataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/clientprocess/SendData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/serverprocess/DataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/clientprocess/PullData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/clientprocess/SendData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/common/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/common/DataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/common/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/serverprocess/DataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/clientprocess/PullData.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/clientprocess/PullData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/DataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/pojo/DataSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/pojo/Span.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/DealData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/ReceiveBadTrace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/ShareBadTrace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/Filter8001Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/Filter8001Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/pojo/DataSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/pojo/Span.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/DealData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/ReceiveBadTrace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/ShareBadTrace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Span.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/MergeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/ReceiveData.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,25 +76,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/filter-8001/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProject\AliTianChi\filter-8000\src\main\java\com\rul\filter8000" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.rul.filter8000" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\MyProject\AliTianChi\filter-8001\src\main\resources" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rul.filter8001" />
+      <recent name="com.rul.filter8001.serverprocess" />
+      <recent name="com.rul.gather8002.serverprocess" />
       <recent name="com.rul.gather8002" />
       <recent name="com.rul.gather8002.pojo" />
-      <recent name="com.rul.filter8000.service" />
-      <recent name="com.rul.filter8001" />
-      <recent name="com.rul.filter8001.service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MyProject\AliTianChi\filter-8000\src\main\java\com\rul\filter8000" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProject\AliTianChi\filter-8001\src\main\java\com\rul\filter8001" />
+      <recent name="D:\MyProject\AliTianChi\filter-8001\src\main\java" />
+      <recent name="D:\MyProject\AliTianChi\gather-8002\src\main\java\com\rul\gather8002" />
+      <recent name="D:\MyProject\AliTianChi\filter-8001\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -82,7 +108,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Filter8001Application">
+  <component name="RunManager" selected="Spring Boot.Filter8000Application">
     <configuration name="Filter8000Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="filter-8000" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.rul.filter8000.Filter8000Application" />
@@ -155,6 +181,10 @@
       <workItem from="1590211355706" duration="3612000" />
       <workItem from="1590238647497" duration="779000" />
       <workItem from="1590493064635" duration="7503000" />
+      <workItem from="1590501477005" duration="124000" />
+      <workItem from="1590501873788" duration="9000" />
+      <workItem from="1590559792969" duration="3758000" />
+      <workItem from="1590581335319" duration="2817000" />
     </task>
     <task id="LOCAL-00001" summary="完成排序">
       <created>1590155146482</created>
@@ -174,18 +204,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="完成排序" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="#Intentions" timestamp="1590133733196">
+    <state x="233" y="0" key="#Intentions" timestamp="1590561472689">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Intentions/0.0.1280.680@0.0.1280.680" timestamp="1590133733196" />
+    <state x="233" y="0" key="#Intentions/0.0.1280.680@0.0.1280.680" timestamp="1590561472689" />
     <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590217462782">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1590217462782" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589975992012">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590584133533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1589975992012" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1590584133533" />
     <state x="766" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1589778790256">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

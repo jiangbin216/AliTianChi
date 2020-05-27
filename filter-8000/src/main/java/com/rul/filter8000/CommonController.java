@@ -1,14 +1,14 @@
 package com.rul.filter8000;
 
-import com.rul.filter8000.pojo.DataSource;
-import com.rul.filter8000.service.DealData;
+import com.rul.filter8000.clientprocess.PullData;
+import com.rul.filter8000.common.DataSource;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 测评程序接口
- * @author rul
+ * @author RuL
  */
 @RestController
 public class CommonController {
@@ -31,7 +31,8 @@ public class CommonController {
     public String setParamter(@RequestParam Integer port){
         //设置数据源
         DataSource.setDataPort(port);
-        Thread thread = new Thread(DealData::pullData);
+        //开启线程拉取数据
+        Thread thread = new Thread(PullData::pullData,"pull data thread");
         thread.start();
         return "success";
     }

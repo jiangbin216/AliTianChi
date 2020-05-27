@@ -1,15 +1,16 @@
-package com.rul.filter8000.common;
+package com.rul.filter8001.common;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.net.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.Proxy;
+import java.net.URL;
 
 /**
- * 数据源
- *
- * @author RuL
+ * @author Rul
  */
 public class DataSource {
 
@@ -28,7 +29,7 @@ public class DataSource {
      * @return 数据源地址
      */
     public static String getDataPath() {
-        String serverPort = System.getProperty("SERVER_PORT", "8000");
+        String serverPort = System.getProperty("SERVER_PORT", "8001");
         if ("8000".equals(serverPort)) {
             return HOST + port + "/trace3.data";
         } else if ("8001".equals(serverPort)) {

@@ -15,7 +15,7 @@ public class Filter8000Application {
     public static void main(String[] args) {
         //获取环境变量服务端口，默认为8000
         String port = System.getProperty("SERVER_PORT", "8000");
-        LOGGER.info("server"+port+" start");
+        LOGGER.info("server "+port+" start");
         SpringApplication.run(Filter8000Application.class,
                 "--server.port=" + port);
     }

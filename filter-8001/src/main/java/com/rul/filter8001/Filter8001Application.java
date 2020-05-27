@@ -13,9 +13,9 @@ public class Filter8001Application {
     public static final Logger LOGGER = LoggerFactory.getLogger(Filter8001Application.class);
 
     public static void main(String[] args) {
-        //获取环境变量服务端口，默认为8001
+        //获取环境变量服务端口，默认为8000
         String port = System.getProperty("SERVER_PORT", "8001");
-        LOGGER.info("server"+port+" start");
+        LOGGER.info("server "+port+" start");
         SpringApplication.run(Filter8001Application.class,
                 "--server.port=" + port);
     }
