@@ -57,12 +57,12 @@ public class SendData {
     }
 
     /**
-     * 发送当前节点完成拉取数据信息到汇总节点
+     * 数据拉取成功，发送badTrace到汇总节点
      */
     public static void finishedPullData() {
         pool.execute(() -> {
             RestTemplate template = new RestTemplate();
-            String result = template.getForObject(HOST + PORT + "/finishedPullData", String.class);
+            String result = template.postForObject(HOST + PORT + "/finishedPullData", Data.badTraceIds, String.class);
             LOGGER.info("finished pull data " + result);
         });
     }

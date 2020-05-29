@@ -2,35 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="357f814c-dbb5-435c-a6aa-74d6680ad5b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/clientprocess/SendData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/serverprocess/DataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/clientprocess/PullData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/clientprocess/SendData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/common/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/common/DataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/common/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/serverprocess/DataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/clientprocess/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/clientprocess/ReqData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/clientprocess/SortData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/serverprocess/DataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/clientprocess/PullData.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/clientprocess/PullData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/common/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/pojo/DataSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/pojo/Span.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/DealData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/ReceiveBadTrace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/service/ShareBadTrace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/Filter8001Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/Filter8001Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/pojo/DataSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/pojo/Span.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/DealData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/ReceiveBadTrace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/service/ShareBadTrace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/pojo/Span.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/MergeData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather-8002/src/main/java/com/rul/gather8002/service/ReceiveData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/serverprocess/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8000/src/main/java/com/rul/filter8000/serverprocess/DataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/serverprocess/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-8001/src/main/java/com/rul/filter8001/serverprocess/DataController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +163,10 @@
       <workItem from="1590501477005" duration="124000" />
       <workItem from="1590501873788" duration="9000" />
       <workItem from="1590559792969" duration="3758000" />
-      <workItem from="1590581335319" duration="2817000" />
+      <workItem from="1590581335319" duration="3016000" />
+      <workItem from="1590585117514" duration="52000" />
+      <workItem from="1590651353798" duration="21000" />
+      <workItem from="1590724938311" duration="4215000" />
     </task>
     <task id="LOCAL-00001" summary="完成排序">
       <created>1590155146482</created>
@@ -204,6 +186,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="完成排序" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Inspections" timestamp="1590727831906">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1590727831906" />
     <state x="233" y="0" key="#Intentions" timestamp="1590561472689">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -216,10 +202,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1590584133533" />
-    <state x="766" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1589778790256">
+    <state x="766" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1590725758951">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="766" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1589778790256" />
+    <state x="766" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1590725758951" />
     <state x="307" y="266" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1589975703235">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -236,38 +222,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590155145243" />
-    <state width="907" height="388" key="GridCell.Tab.0.bottom" timestamp="1590142831368">
+    <state width="907" height="217" key="GridCell.Tab.0.bottom" timestamp="1590584376513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="907" height="388" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590142831368" />
-    <state width="907" height="388" key="GridCell.Tab.0.center" timestamp="1590142831368">
+    <state width="907" height="217" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590584376513" />
+    <state width="907" height="217" key="GridCell.Tab.0.center" timestamp="1590584376513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="907" height="388" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590142831368" />
-    <state width="907" height="388" key="GridCell.Tab.0.left" timestamp="1590142831367">
+    <state width="907" height="217" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590584376513" />
+    <state width="907" height="217" key="GridCell.Tab.0.left" timestamp="1590584376513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="907" height="388" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590142831367" />
-    <state width="907" height="388" key="GridCell.Tab.0.right" timestamp="1590142831368">
+    <state width="907" height="217" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590584376513" />
+    <state width="907" height="217" key="GridCell.Tab.0.right" timestamp="1590584376513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="907" height="388" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590142831368" />
-    <state width="907" height="388" key="GridCell.Tab.1.bottom" timestamp="1590142831368">
+    <state width="907" height="217" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590584376513" />
+    <state width="907" height="217" key="GridCell.Tab.1.bottom" timestamp="1590584376513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="907" height="388" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590142831368" />
-    <state width="907" height="388" key="GridCell.Tab.1.center" timestamp="1590142831368">
+    <state width="907" height="217" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590584376513" />
+    <state width="907" height="217" key="GridCell.Tab.1.center" timestamp="1590584376513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="907" height="388" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1590142831368" />
-    <state width="907" height="388" key="GridCell.Tab.1.left" timestamp="1590142831368">
+    <state width="907" height="217" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1590584376513" />
+    <state width="907" height="217" key="GridCell.Tab.1.left" timestamp="1590584376513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="907" height="388" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1590142831368" />
-    <state width="907" height="388" key="GridCell.Tab.1.right" timestamp="1590142831368">
+    <state width="907" height="217" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1590584376513" />
+    <state width="907" height="217" key="GridCell.Tab.1.right" timestamp="1590584376513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="907" height="388" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1590142831368" />
+    <state width="907" height="217" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1590584376513" />
     <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590155157615">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

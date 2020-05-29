@@ -23,8 +23,11 @@ public class DataController {
      */
     @RequestMapping("/getTrace")
     public ArrayList<String> getTrace(@RequestBody String traceId) {
-        //从Map中删除并返回数据
-        return Data.traces.remove(traceId);
+        //删除数据并返回
+        ArrayList<String> trace = Data.traces.remove(traceId);
+        //合并到Data.badTraceIds
+        Data.badTraceIds.remove(traceId);
+        return trace;
     }
 
     /**
