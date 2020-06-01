@@ -1,9 +1,11 @@
 package com.rul.gather8002.clientprocess;
 
+import com.alibaba.fastjson.JSON;
 import com.rul.gather8002.Util;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -35,7 +37,7 @@ public class ReqData {
             }
             //生成md5
             String md5 = Util.MD5(new String(spans));
-            Data.checkSum.put(traceId,md5);
+            Data.checkSum.put(traceId, md5);
             //将traceId从badTraceIds中删除
             Data.badTraceIds.remove(traceId);
         });
@@ -52,5 +54,41 @@ public class ReqData {
             template.postForObject(HOST + PORT1 + "/delTrace", traceId, String.class);
             template.postForObject(HOST + PORT2 + "/delTrace", traceId, String.class);
         });
+    }
+
+    /**
+     * 拉取两个节点已经完成的badTrace
+     */
+    public static void pullFinishedData() {
+        pool.execute(() -> {
+            RestTemplate template = new RestTemplate();
+            HashMap<String, ArrayList<String>> traceMap1 = template.postForObject(HOST + PORT1 + "/finishedData",
+                    Data.badTraceIds, HashMap.class);
+            HashMap<String, ArrayList<String>> traceMap2 = template.postForObject(HOST + PORT2 + "finishedData",
+                    Data.badTraceIds, HashMap.class);
+
+            for (String badTraceId : Data.badTraceIds) {
+                assert traceMap1 != null;
+                ArrayList<String> list1 = traceMap1.get(badTraceId);
+                assert traceMap2 != null;
+                ArrayList<String> list2 = traceMap2.get(badTraceId);
+
+                //排序合并
+                SortData.sortAndMergeTrace(list1, list2);
+                //上报数据
+                finish();
+            }
+
+        });
+    }
+
+    /**
+     * 运行结束，数据上报
+     */
+    public static void finish() {
+        String checkSumJSON = JSON.toJSONString(Data.checkSum);
+        RestTemplate template = new RestTemplate();
+        System.out.println(checkSumJSON);
+        template.postForObject("http://localhost:" + Data.dataPort + "/api/finished", checkSumJSON, Object.class);
     }
 }

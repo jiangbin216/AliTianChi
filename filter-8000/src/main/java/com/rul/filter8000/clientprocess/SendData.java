@@ -25,13 +25,29 @@ public class SendData {
     /**
      * 封装请求体
      */
-    static class RequestBody {
+    static class Body {
         String traceId;
         boolean isBadTrace;
 
-        public RequestBody(String traceId, boolean isBadTrace) {
+        public Body(String traceId, boolean isBadTrace) {
             this.traceId = traceId;
             this.isBadTrace = isBadTrace;
+        }
+
+        public String getTraceId() {
+            return traceId;
+        }
+
+        public void setTraceId(String traceId) {
+            this.traceId = traceId;
+        }
+
+        public boolean isBadTrace() {
+            return isBadTrace;
+        }
+
+        public void setBadTrace(boolean badTrace) {
+            isBadTrace = badTrace;
         }
     }
 
@@ -42,17 +58,15 @@ public class SendData {
      */
     public static void sendFinishedTraceIdToGather(String traceId) {
         pool.execute(() -> {
-            RequestBody body;
+            Body body;
             //是badTraceId
             if (Data.badTraceIds.contains(traceId)) {
-                body = new RequestBody(traceId, true);
+                body = new Body(traceId, true);
             } else {
-                body = new RequestBody(traceId, false);
+                body = new Body(traceId, false);
             }
             RestTemplate template = new RestTemplate();
-            String result = template.postForObject(HOST + PORT + "/setFinishedTraceId", body, String.class);
-
-            LOGGER.info("set finished traceId " + result);
+            template.postForObject(HOST + PORT + "/setFinishedTraceId", body, String.class);
         });
     }
 

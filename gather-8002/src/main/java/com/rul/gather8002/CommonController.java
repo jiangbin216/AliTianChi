@@ -1,5 +1,6 @@
 package com.rul.gather8002;
 
+import com.rul.gather8002.clientprocess.Data;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CommonController {
 
-    public static Integer PORT;
-
     /**
      * 状态接口
      *
@@ -21,7 +20,6 @@ public class CommonController {
      */
     @RequestMapping("/ready")
     public String ready() {
-
         return "success";
     }
 
@@ -34,7 +32,7 @@ public class CommonController {
     @RequestMapping("/setParameter")
     public String setParamter(@RequestParam Integer port) {
         //设置数据源
-        PORT = port;
+        Data.dataPort = port;
         return "success";
     }
 

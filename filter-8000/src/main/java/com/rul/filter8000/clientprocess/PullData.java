@@ -68,7 +68,8 @@ public class PullData {
                 }
                 count++;
             }
-
+            //当前节点数据拉取完成，发送badTraceIds到汇总节点
+            SendData.finishedPullData();
         } catch (IOException e) {
             e.printStackTrace();
             LOGGER.error("catch IOException");

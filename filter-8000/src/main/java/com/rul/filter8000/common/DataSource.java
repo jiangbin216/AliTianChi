@@ -14,7 +14,7 @@ import java.net.*;
 public class DataSource {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DataSource.class);
-    private static final String HOST = "http://47.106.252.131:";
+    private static final String HOST = "http://localhost:";
     private static int port;
 
     /**
@@ -30,9 +30,9 @@ public class DataSource {
     public static String getDataPath() {
         String serverPort = System.getProperty("SERVER_PORT", "8000");
         if ("8000".equals(serverPort)) {
-            return HOST + port + "/trace3.data";
+            return HOST + port + "/trace1.data";
         } else if ("8001".equals(serverPort)) {
-            return HOST + port + "/trace4.data";
+            return HOST + port + "/trace2.data";
         } else {
             return HOST + port;
         }

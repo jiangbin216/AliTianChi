@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * 提供汇总节点操作过滤节点的接口
@@ -39,5 +39,18 @@ public class DataController {
     @RequestMapping("/delTrace")
     public String delTrace(@RequestBody String traceId) {
         return Data.traces.remove(traceId) == null ? "fail" : "success";
+    }
+
+    /**
+     * 返回剩余的badTraces
+     *
+     * @param badTraceIds badTraceIds
+     * @return 剩余的badTraces
+     */
+    @RequestMapping("/finishedData")
+    public HashMap<String, ArrayList<String>> finishedData(@RequestBody HashSet<String> badTraceIds) {
+        //删除不属于badTraceId的数据
+        Data.traces.entrySet().removeIf(trace -> !badTraceIds.contains(trace.getKey()));
+        return Data.traces;
     }
 }

@@ -5,6 +5,7 @@ import com.rul.gather8002.clientprocess.ReqData;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.HashSet;
 
@@ -41,6 +42,12 @@ public class DataController {
     @RequestMapping("/finishedPullData")
     public String finishedPullData(@RequestBody HashSet<String> badTraceIds) {
         Data.badTraceIds.addAll(badTraceIds);
+        //另一个过滤节点已经完成数据拉取操作
+        if(Data.oneFinished){
+            ReqData.pullFinishedData();
+        }else{
+            Data.oneFinished = true;
+        }
         return "success";
     }
 
@@ -55,6 +62,22 @@ public class DataController {
         public Body(String traceId, boolean isBadTrace) {
             this.traceId = traceId;
             this.isBadTrace = isBadTrace;
+        }
+
+        public String getTraceId() {
+            return traceId;
+        }
+
+        public void setTraceId(String traceId) {
+            this.traceId = traceId;
+        }
+
+        public boolean isBadTrace() {
+            return isBadTrace;
+        }
+
+        public void setBadTrace(boolean badTrace) {
+            isBadTrace = badTrace;
         }
     }
 
